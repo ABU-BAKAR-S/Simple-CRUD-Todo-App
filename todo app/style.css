@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  color: white;
+  background-color: #333;
+}
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 50%;
+  height: 80vh;
+  overflow: auto;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #222;
+  color: white;
+}
+.card_title {
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 30px;
+}
+
+#todo_form {
+  margin-bottom: 15px;
+}
+input {
+  width: 60%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 16px;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.3s;
+  font-size: 16px;
+}
+#addTodoBtn {
+  width: 20%;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+.list_style {
+  width: 82%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 8px;
+  border-radius: 6px;
+  margin: 16px 58px;
+  transition: all 0.3s;
+}
+.list_style:hover {
+  background-color: #c21d1d;
+}
+.bg_success {
+  width: 60%;
+  margin: 8px 58px;
+  padding: 8px;
+  color: black;
+  background-color: #ddffdd;
+  border-radius: 6px;
+  border-left: 6px solid #04aa6f;
+}
+.bg_danger {
+  width: 60%;
+  margin: 8px 58px;
+  padding: 8px;
+  color: black;
+  background-color: #ddffdd;
+  border-radius: 6px;
+  border-left: 6px solid #ff5945;
+}
+
+.buttons {
+  display: inline-block;
+}
+
+/* Hide the menu button by default */
+.menuBtn {
+  display: none;
+}
+
+/* media query for mobile  */
+@media screen and (max-width: 320px) {
+  .card {
+    width: 90%;
+  }
+  input {
+    width: 90%;
+  }
+  #addTodoBtn {
+    width: 50%;
+    margin-top: 15px;
+  }
+  .list_style {
+    width: 100%;
+    margin: 16px auto;
+    position: relative;
+  }
+  .buttons {
+    display: none;
+    position: absolute;
+    top: -10px; /* Adjust this to position above the three dots */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1;
+  }
+  .menuBtn {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 375px) {
+  .card {
+    width: 90%;
+  }
+  input {
+    width: 90%;
+  }
+  #addTodoBtn {
+    width: 50%;
+    margin-top: 15px;
+  }
+  .list_style {
+    width: 100%;
+    margin: 16px auto;
+    position: relative;
+  }
+  .buttons {
+    display: none;
+    position: absolute;
+    top: -10px; /* Adjust this to position above the three dots */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1;
+  }
+  .menuBtn {
+    display: inline-block;
+  }
+}
+
+/* Hide buttons and show three dots menu on small screens */
+@media screen and (max-width: 425px) {
+  .card {
+    width: 90%;
+  }
+  input {
+    width: 90%;
+  }
+  #addTodoBtn {
+    width: 50%;
+    margin-top: 15px;
+  }
+  .list_style {
+    width: 100%;
+    margin: 16px auto;
+    position: relative;
+  }
+  .buttons {
+    display: none;
+    position: absolute;
+    top: -40px; /* Adjust this to position above the three dots */
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1;
+  }
+  .menuBtn {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+  input {
+    width: 80%;
+  }
+  #addTodoBtn {
+    width: 20%;
+    margin-top: 15px;
+  }
+}
